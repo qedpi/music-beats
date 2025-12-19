@@ -1,48 +1,52 @@
 # 🎵 Music Beats
 
-A simple BPM and key finder for any song. Search for a song and instantly see its tempo, musical key, and time signature.
+A practice metronome that syncs to any song's tempo. Search for a song, and instantly start practicing at the correct BPM.
+
+**[Try it live →](https://qedpi.github.io/music-beats)**
 
 ## Features
 
-- 🔍 Search songs by title and artist
-- 🥁 View BPM (beats per minute)
-- 🎹 See musical key
-- ⏱️ Check time signature
-- 🌙 Dark mode support
+- 🥁 **Smart Metronome** - Visual beat indicator with accented downbeats
+- 🔍 **Song Search** - Find any song's BPM instantly
+- ⏱️ **Time Signatures** - Switch between 3/4, 4/4, 5/4, 6/4
+- 🎹 **One-Click Sync** - Select a song to set the metronome automatically
+- 🌙 **Dark Mode** - Respects system preferences
+- 📱 **Mobile Ready** - Works great on phones for practice sessions
+
+## Use Cases
+
+- **Musicians** - Practice songs at the correct tempo
+- **Drummers** - Lock in to the right groove before playing
+- **Dancers** - Find songs at your preferred BPM
+- **DJs** - Quick tempo reference for mixing
 
 ## Getting Started
 
 ```bash
-# Install dependencies
 bun install
-
-# Set up environment
-cp .env.example .env.local
-# Add your GetSongBPM API key to .env.local
-
-# Start development server
 bun dev
 ```
 
-## Environment Variables
+## Environment Setup
 
-Create a `.env.local` file:
+Create `.env.local` with your API key:
 
 ```
-VITE_GETSONGBPM_API_KEY=your_api_key_here
+VITE_GETSONGBPM_API_KEY=your_key_here
 ```
 
-Get your free API key at [GetSongBPM](https://getsongbpm.com/api).
+Get a free API key at [GetSongBPM](https://getsongbpm.com/api).
 
 ## Tech Stack
 
-- [React](https://react.dev) - UI library
-- [Vite](https://vite.dev) - Build tool
-- [TypeScript](https://typescriptlang.org) - Type safety
+- [React 19](https://react.dev)
+- [Vite](https://vite.dev)
+- [TypeScript](https://typescriptlang.org)
+- [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) for metronome clicks
 
-## Data Source
+## Data Sources
 
-Song data powered by [GetSongBPM](https://getsongbpm.com) - the comprehensive database for BPM, key, and tempo information.
+- Song tempo data from [GetSongBPM](https://getsongbpm.com)
 
 ## License
 
