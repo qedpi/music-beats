@@ -1,0 +1,153 @@
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.search-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: #646cff;
+}
+
+.search-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-button:hover:not(:disabled) {
+  background: #535bf2;
+}
+
+.search-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #dc3545;
+  text-align: center;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.song-card {
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  text-align: left;
+  background: #fafafa;
+}
+
+.song-card h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+.song-card .artist {
+  margin: 0 0 0.75rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.song-details {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.song-details .detail {
+  background: #e9ecef;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #646cff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  .app {
+    color: #fff;
+  }
+
+  header p {
+    color: #aaa;
+  }
+
+  .search-input {
+    background: #1a1a1a;
+    border-color: #333;
+    color: #fff;
+  }
+
+  .song-card {
+    background: #1a1a1a;
+    border-color: #333;
+  }
+
+  .song-card .artist {
+    color: #aaa;
+  }
+
+  .song-details .detail {
+    background: #333;
+  }
+
+  footer {
+    color: #888;
+  }
+}
